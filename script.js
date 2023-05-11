@@ -1,7 +1,8 @@
 function calculate() {
-    var inputValue = document.getElementById('inputValue').value;
-    var fivePercent = inputValue * 0.05;
-    var value = fivePercent + inputValue;
-    var result = value * 1.1;
-    document.getElementById('result').innerHTML = "Result: " + result;
-}
+    const inputValue = parseFloat(document.getElementById('inputValue').value);
+    const percent = inputValue * 0.035;
+    const value = percent + inputValue;
+    const result = value * 1.105;
+    document.getElementById('result').innerHTML = `Result: ${result.toFixed(2)}`;
+  }
+  
